@@ -5,78 +5,16 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/ocupacion"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtName"
+        android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="114dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/empleo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="221dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/domicilio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="282dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/ciudad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="332dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="375dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/telefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="415dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="165dp"
-        android:text="TextView" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnllamar"
@@ -92,9 +30,11 @@
         android:id="@+id/btnEmail"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="250dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="46dp"
         android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@+id/btnllamar"
         android:text="Enviar Correo" />
 </RelativeLayout>
