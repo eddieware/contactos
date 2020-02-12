@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         //Boton contacto2
         imageBtn2.setOnClickListener{
             val intent = Intent(this,SecondActivity::class.java)
-            val name = "Julián Arreguín"
+            val name = "Julian Arreguin"
             val ocupacion = "Programador"
             val trabaja = "Apple"
             val domicilio = "Ocampo No. 235"
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         //Boton3
         imageBtn3.setOnClickListener {
             val intent = Intent(this,SecondActivity::class.java)
-            val name = "Susy Ramírez"
+            val name = "Susy Ramirez"
             val ocupacion = "Diseñadora"
             val trabaja = "Lacoste"
             val domicilio = "Ocampo No. 236"
