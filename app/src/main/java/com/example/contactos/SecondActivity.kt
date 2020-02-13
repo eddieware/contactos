@@ -13,6 +13,7 @@ class SecondActivity :AppCompatActivity () {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.secondlayout)
+        var email: String = ""
         var intent = intent
         val name = intent.getStringExtra("Name")
         val ocupacion = intent.getStringExtra("Ocupacion")
@@ -25,6 +26,10 @@ class SecondActivity :AppCompatActivity () {
         val resultTv = findViewById<TextView>(R.id.txtName)
         resultTv.text = name+"\n"+ "Ocupacion: "+ocupacion+"\n"+ "Trabaja en:"+ trabaja+"\n"+
                 "Domicilio: "+domicilio+"\n"+"Ciudad: "+ ciudad +"\n"+"Correo: "+correo+"\n"+"Tel: "+tel
+
+
+
+
 
 
         bhacerllamada.setOnClickListener(View.OnClickListener {
@@ -72,7 +77,35 @@ class SecondActivity :AppCompatActivity () {
             }
 
 
+
+
+
+
+
         })
+
+
+        btnEmail.setOnClickListener {
+            val intEmail = Intent(Intent.ACTION_SENDTO).apply {
+                if (name == "Rosa Perez") {
+                    data = Uri.parse("mailto:".plus("rosa@gmail.com"))
+                }else if (name == "Julian Arreguin"){
+                    data = Uri.parse("mailto:".plus("julian@gmail.com"))
+                }else{
+                    data = Uri.parse("mailto:".plus("susy@gmail.com"))
+
+                }
+                putExtra(Intent.EXTRA_SUBJECT,"Email topic")
+                putExtra(Intent.EXTRA_TEXT,"some body here")
+
+            }
+            if( intent.resolveActivity(packageManager) != null )
+                startActivity(intEmail)
+
+        }
+
+
+
 
 
 
